@@ -4,10 +4,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Douglas Malave</title>
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="css/fontawesome-free-5.9.0-web/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>hola mundo</h1>
-    <p>Probando Git</p>
-
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto justify-content-md-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- inicio -->
+    <section id="inicio" class="start">
+      <div class="container firstdiv">
+        <h1>Bienvenido</h1>
+        <h2>Douglas Malavé</h2>
+        <h3>Web Developer</h3>    
+      </div>
+    </section>
+    <!-- Servicios -->
+    <section class="bg-light">
+        <div class="container servicios">
+	    <div class="row" id="servicios">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="box">
+                        <div class="box-content">
+                            <h3 class="tag-title">Desarrollo Web</h3>
+                            <hr />
+                            <p>Desarrollo de sitios, servicios y aplicaciones web con lenguajes HTML5, CSS3, JavaScript y PHP</p>
+                            <i class="fas fa-file-code icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="box">
+                        <div class="box-content">
+                            <h3 class="tag-title">Base de Datos</h3>
+                            <hr />
+                            <p>Diseño y producción de base de datos relacionales con lenguaje de consulta SQL </p>
+                            <i class="fas fa-database icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="box">
+                        <div class="box-content">
+                            <h3 class="tag-title">Maquetado Web</h3>
+                            <hr />
+                            <p>Diseño de sitios web responsive. Estructura, gama cromatica, tipografía y accsesibilidad </p>                          
+                            <i class="fas fa-pencil-alt icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            <div id="contacto"></div>
+        </div>
+	    </div>
+    </section>
+    <!-- contacto -->
+    <section>
+        <div class="container my-5">                    
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="php/correo.php" method="post">
+                        <input class="form-control" type="text" required maxlength="4s0" name="name" placeholder="Nombre" /><br />
+                        <input class="form-control" type="tel" required maxlength="15" name="phone" placeholder="Telefono" /><br />
+                        <input class="form-control" type="email" required maxlength="30" name="email" placeholder="E-mail" /><br />
+                        <textarea class="form-control" name="text" placeholder="¿En que te puedo ayudar?" style="height:150px;"></textarea><br />
+                        <input type="submit" class="col btn btn-dark-moon" value="Enviar"><br /><br />
+                    </form>
+                </div>
+                <div class="col-md-4 contacto">
+                    <b>Contactame:</b> <br />
+                    Telefono: +34 657 75 37 97<br />
+                    E-mail: <a href="mailto:doumalave@gmail.com">doumalave@gmail.com</a><br />
+                    <br /><br />
+                    <b>Headquarter:</b><br/>
+                    Mi Casa <br/>
+                    Soy Freelancer<br/>
+                    Tenerife, Spain<br/>
+                    Telefono: +34 922 86 34 88<br/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <section id="footer">
+            <!-- <div class="container my-5">
+                </div> -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="https://es.linkedin.com/in/douglas-rodolfo-malave-romero-693b23176" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/doumalave/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://github.com/doumalave" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/doumalave" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    </hr>
+                </div>	
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p>Made in Tenerife, Spain</p>
+                        <p class="h6">&copy All right Reversed. Douglas Malavé</p>
+                    </div>
+                    </hr>
+                </div>	
+            </div>
+        </section>
+    </footer>        
 </body>
 </html>
